@@ -1,0 +1,29 @@
+input{
+  position: absolute;
+  width: 991px;
+  height: 25px;
+
+  background: #84838393;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  align-items: center;
+}
+
+.input-container input {
+  margin-right: 10px;
+}
+
+.input-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,26 @@
+<div class="icon-grid">
+  <div class="icon" *ngFor="let icon of icons">
+    <i class="material-icons">{{ icon }}</i>
+  </div>
+</div>
+
+
+
+<style>
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  grid-gap: 10px; /* spacing between icons */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* adjust the height as needed */
+}
+
+.icon i {
+  font-size: 30px; /* adjust the font size as needed */
+}
+</style>
