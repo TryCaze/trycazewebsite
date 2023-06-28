@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core'
+import { DialogHomeComponent  } from '../virtualapps/dialog-home/dialog-home.component'
 
 @Component({
   selector: 'app-icon-grid-component',
   templateUrl: './icon-grid-component.component.html',
   styleUrls: ['./icon-grid-component.component.scss']
 })
+
 export class IconGridComponentComponent {
   icons: string[] = [
-    // Array containing all the icon names, and the icons
     'home',
     'account_balance',
     'chrome_reader_mode',
@@ -17,7 +18,34 @@ export class IconGridComponentComponent {
     'wb_cloudy',
     'directions',
     'menu',
-    'star',
-    // ... add more icons
-    ];
+    'star'
+  ];
+
+  @ViewChild('dialogContainer', { read: ViewContainerRef }) dialogContainer!: ViewContainerRef;
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+
+  openDialog(icon: string) {
+    const dialog = document.getElementById('dialog-' + icon) as HTMLDialogElement;
+    dialog.showModal();
+  }
+
+  closeDialog(icon: string) {
+    const dialog = document.getElementById('dialog-' + icon) as HTMLDialogElement;
+    dialog.close();
+  }
+
+  createDialogComponent(icon: string): void {
+    this.dialogContainer.clear();
+
+    switch (icon) {
+      case 'home':
+        const homeComponentFactory = this.componentFactoryResolver.resolveComponentFactory(DialogHomeComponent);
+        this.dialogContainer.createComponent(homeComponentFactory);
+        break;
+      // Add cases for other icons
+    }
+  }
 }
+
+

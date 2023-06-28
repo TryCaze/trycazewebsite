@@ -10,13 +10,17 @@ import { DialogContentComponent } from './dialog-content/dialog-content.componen
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { IconGridComponentComponent } from './icon-grid-component/icon-grid-component.component';
+import { DialogHomeComponent  } from './virtualapps/dialog-home/dialog-home.component'
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogContentComponent,
     SearchComponent,
-    IconGridComponentComponent
+    IconGridComponentComponent,
+    DialogHomeComponent
   ],
   imports: [
     BrowserModule,

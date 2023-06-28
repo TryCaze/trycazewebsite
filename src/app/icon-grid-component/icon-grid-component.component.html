@@ -1,10 +1,29 @@
-<div class="icon-grid">
-  <div class="icon" *ngFor="let icon of icons">
-    <i class="material-icons">{{ icon }}</i>
+<!-- This shows the actual icons appear on the dialog content,
+  it is worth pointing out the actual dialog was hardocded and did not use any pure HTML compared to
+  what the icons will actullt use, which is the HTML dialog content -->
+
+  <div class="icon-grid">
+    <button class="icon" *ngFor="let icon of icons" (click)="openDialog(icon)">
+      <i class="material-icons">{{ icon }}</i>
+    </button>
   </div>
-</div>
+
+  <div #dialogContainer></div>
+
+  <dialog [id]="'dialog-home'">
+    <app-dialog-home (close)="closeDialog(icons[0])"></app-dialog-home>
+  </dialog>
+
+  <div *ngFor="let icon of icons">
+    <dialog [id]="'dialog-' + icon">
+      <button (click)="closeDialog(icon)"><i class="material-icons">close</i></button>
+    </dialog>
+  </div>
 
 
+
+
+<!-- Just the styles down here -->
 
 <style>
 .icon-grid {
