@@ -5,7 +5,7 @@
   position: relative;
   // background-color: yellow;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -14,4 +14,72 @@
 .System .text{
   margin-left: 10px;
   font-size: 50px;
+}
+
+.Customazation .text{
+  margin-left: 10px;
+  font-size: 50px;
+}
+
+.About .text{
+  margin-left: 10px;
+  font-size: 50px;
+}
+
+.Credit .text{
+  margin-left: 10px;
+  font-size: 50px;
+}
+
+.close{
+  background-color: transparent;
+  float: right;
+  border: transparent;
+}
+
+.close:hover{
+  background-color: red;
+  transition: 0.3s;
+}
+
+.settings::backdrop{
+  background-color: transparent;
+}
+
+.settings{
+  width: 45%;
+  height: 75%;
+  background-color: gray;
+  border: transparent;
+}
+
+.seti{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 20px;
+}
+
+.r1{
+  background-color: rgba(0, 255, 255, 0.292);
+}
+
+.r2{
+  background-color: rgba(0, 255, 255, 0.292);
+}
+
+.r3{
+  background-color: rgba(0, 255, 255, 0.292);
+}
+
+.r4{
+  background-color: rgba(0, 255, 255, 0.292);
+}
+
+.bu{
+  background-color: transparent;
+  border: transparent;
+}
+
+.bu:hover{
+  background-color: aquamarine;
+  transition: 0.3;
 }

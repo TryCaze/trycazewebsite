@@ -8,7 +8,7 @@ import { DialogHomeComponent  } from '../virtualapps/dialog-home/dialog-home.com
 })
 
 export class IconGridComponentComponent {
-  icons: string[] = [
+  icons:  string[] = [
     'home',
     'account_balance',
     'chrome_reader_mode',
@@ -20,6 +20,7 @@ export class IconGridComponentComponent {
     'menu',
     'star'
   ];
+
 
   @ViewChild('dialogContainer', { read: ViewContainerRef }) dialogContainer!: ViewContainerRef;
 

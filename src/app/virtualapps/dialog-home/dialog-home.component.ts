@@ -17,4 +17,23 @@ export class DialogHomeComponent {
     this.close.emit();
 
   }
+  browserName: string = '';
+
+  ngOnInit() {
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    if (userAgent.includes('chrome')) {
+      this.browserName = 'Chrome';
+    } else if (userAgent.includes('firefox')) {
+      this.browserName = 'Firefox';
+    } else if (userAgent.includes('safari')) {
+      this.browserName = 'Safari';
+    } else if (userAgent.includes('edge')) {
+      this.browserName = 'Edge';
+    } else if (userAgent.includes('opera')) {
+      this.browserName = 'Opera';
+    } else {
+      this.browserName = 'Unknown';
+    }
+  }
 }

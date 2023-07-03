@@ -1,26 +1,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 
-<button (click)="close.emit()"><i class="material-icons">close</i></button>
+<button class="close" (click)="close.emit()"><i class="material-icons">close</i></button>
+
+
+
 
 <div class="sidenav">
-  <div class="Credit">
-    <i class="material-icons">search</i>
-    <span class="text">Credit</span>
-  </div>
-  <div class="About">
-    <i class="material-icons">question</i>
-    <span class="text">About</span>
-  </div>
-  <div class="Customazation">
-    <i class="material-icons">paint</i>
-    <span class="text">Customazation</span>
-  </div>
+
   <div class="System">
-    <i class="material-icons">computer</i>
-    <span class="text">System</span>
+
+    <dialog id="d" class="settings">
+     <button onclick="d.close()"><i class="material-icons">keyboard_backspace</i></button>
+     <div class="seti">
+      <p class="r1">You are currently using {{ browserName }} browser! </p>
+      <p class="r2">This website was built with Angular </p>
+      <p class="r3">Languages nesscesary for this project to work were: HTML, CSS and TypeScript </p>
+      <p class="r4">Some other notable tools to make this website work were: </p>
+      <li class="r4">Github for backing up the project and for collaborations </li>
+      <li class="r4">Firebase for hosting the website and database </li>
+     </div>
+    </dialog>
+
+    <button class="bu" onclick="d.showModal()">
+      <img src="assets/images/screen.svg" alt="screen">
+      <span class="text">System</span>
+    </button>
+  </div>
+
+
+  <div class="Customazation">
+
+    <dialog id="a" class="settings">
+      Dialoge test
+      <button onclick="a.close()">Close</button>
+     </dialog>
+
+     <button  class="bu" onclick="a.showModal()">
+      <img src="assets/images/pencil.svg" alt="pencil">
+      <span class="text">Edit</span>
+     </button>
 
   </div>
+
+
+  <div class="About">
+
+    <dialog id="b" class="settings">
+      Dialoge test
+      <button onclick="b.close()">Close</button>
+     </dialog>
+
+     <button  class="bu"  onclick="b.showModal()">
+      <img src="assets/images/about.svg" alt="">
+      <span class="text">About</span>
+     </button>
+
+  </div>
+
+  <div class="Credit">
+
+    <dialog id="c" class="settings">
+      Dialoge test
+    <button onclick="c.close()"></button>
+     </dialog>
+
+     <button  class="bu"  onclick="c.showModal()">
+      <i class="material-icons">person_pin</i>
+      <span class="text">Credit</span>
+     </button>
+
+  </div>
+
+
+
 </div>
 
 

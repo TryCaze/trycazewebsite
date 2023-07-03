@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Pencil " clip-path="url(#clip0_136_45)">
+<path id="Pencil _2" d="M29.6794 7.15646L25.4553 2.59644L4.8345 22.6542L9.05861 27.2142L29.6794 7.15646Z" fill="#FFEF62" stroke="black"/>
+<path id="PencilMetal " d="M25.7143 2L25 2.56818L29.2857 7L30 6.43182L25.7143 2Z" fill="#757474" stroke="black"/>
+<path id="PencilMetal _2" d="M27.6249 0L25.9999 1.45631L30.3749 6L31.9999 4.60194L29.8749 2.27184L27.6249 0Z" fill="#DC2A8A" stroke="black"/>
+<path id="PencilTip " d="M2.62052 29.1855L4.52225 22.67L9.06111 27.5449L2.62052 29.1855Z" fill="#D6D6D6"/>
+<path id="PeniclTip2 " d="M2.64745 29.1359L3.4532 26.423L5.17982 28.5462L2.64745 29.1359Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_136_45">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,6 +1,6 @@
 .icon-grid{
   // background-color: #ff8a6698;
-  background-color: #4092FF;
+  background-color: #CA293D;
 }
 
 #dialog-home{
@@ -11,4 +11,6 @@
 }
 
 
-
+#dialog-home::backdrop{
+  background-color: transparent;
+}

@@ -4,7 +4,7 @@
 
   <div class="icon-grid">
     <button class="icon" *ngFor="let icon of icons" (click)="openDialog(icon)">
-      <i class="material-icons">{{ icon }}</i>
+      <img [src]="'assets/images/' + icon + '.svg'" alt="{{ icon }}" />
     </button>
   </div>
 
@@ -20,9 +20,6 @@
     </dialog>
   </div>
 
-
-
-
 <!-- Just the styles down here -->
 
 <style>
@@ -37,6 +34,8 @@
   align-items: center;
   justify-content: center;
   height: 100px; /* adjust the height as needed */
+  background-color: transparent;
+  border: transparent;
 }
 
 .icon i {

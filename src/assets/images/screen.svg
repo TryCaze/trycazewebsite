@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Screen ">
+<g id="ComputerOut">
+<path d="M11.9412 60.7312V56.9247L12.549 56.2903L14.6303 55.6559H18.0196L19.8431 53.1183L21.0588 50.5807V48.043H4.64706L1 45.5054V6.32785L4.03922 3H35.0392H59.9608H63V26.4731V44.2365L61.7843 46.1397L59.9608 48.0429H43.549H41.7255V49.9462L42.3333 51.215L42.9412 52.4838L44.1569 53.7526L46.5882 55.6559H49.6275L50.8431 56.9247V60.7312L49.6275 62H13.1569L11.9412 60.7312Z" fill="#969FAA"/>
+<path d="M18.0196 55.6559H14.6303L12.549 56.2903L11.9412 56.9247V60.7312L13.1569 62H49.6275L50.8431 60.7312V56.9247L49.6275 55.6559H46.5882M18.0196 55.6559L19.8431 53.1183L21.0588 50.5807V48.043H4.64706L1 45.5054V6.32785L4.03922 3H35.0392H59.9608H63V26.4731V44.2365L61.7843 46.1397L59.9608 48.0429H43.549H41.7255V49.9462L42.3333 51.215L42.9412 52.4838L44.1569 53.7526L46.5882 55.6559M18.0196 55.6559H46.5882" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<rect id="Rectangle 18" x="5" y="8" width="53" height="31" fill="#69D6F4"/>
+<path id="ComputerScreen " d="M5 9.26531V39H8.0814H57.3837L58 37.7347V29.5102V8H57.3837H56.1512H30.8837H6.23256L5 9.26531Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<rect id="Button1" x="45" y="42" width="3" height="3" fill="black"/>
+<rect id="Button2 " x="50" y="42" width="3" height="3" fill="black"/>
+<rect id="Button3 " x="55" y="42" width="3" height="3" fill="black"/>
+<rect id="Button4 " x="52" y="32" width="2" height="2" fill="black"/>
+<rect id="Button5 " x="48" y="32" width="2" height="2" fill="black"/>
+<rect id="Button6  " x="44" y="32" width="2" height="2" fill="black"/>
+<rect id="Button7 " x="7" y="11" width="4" height="2" fill="black"/>
+<g id="Box ">
+<path d="M9 31.1538V18.8462L10.9655 17H27.3448L28 18.8462V31.7692L26.6897 33H9.65517L9 31.1538Z" fill="#D3A06C"/>
+<path d="M16.2069 17.2667V21.3077H21.4483V17.2667M9 18.8462V31.1538L9.65517 33H26.6897L28 31.7692V18.8462L27.3448 17H10.9655L9 18.8462Z" stroke="black" stroke-width="2"/>
+</g>
+<rect id="Text  " x="12" y="11" width="17" height="2" fill="black"/>
+</g>
+</svg>
