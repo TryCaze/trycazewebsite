@@ -49,29 +49,13 @@
 .settings{
   width: 45%;
   height: 75%;
-  background-color: gray;
-  border: transparent;
+  // background-color: gray;
+  background-color: #2B88AA;
 }
 
 .seti{
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 20px;
-}
-
-.r1{
-  background-color: rgba(0, 255, 255, 0.292);
-}
-
-.r2{
-  background-color: rgba(0, 255, 255, 0.292);
-}
-
-.r3{
-  background-color: rgba(0, 255, 255, 0.292);
-}
-
-.r4{
-  background-color: rgba(0, 255, 255, 0.292);
 }
 
 .bu{
@@ -80,6 +64,6 @@
 }
 
 .bu:hover{
-  background-color: aquamarine;
+  background-color: azure;
   transition: 0.3;
 }

@@ -10,7 +10,8 @@ import { DialogContentComponent } from './dialog-content/dialog-content.componen
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { IconGridComponentComponent } from './icon-grid-component/icon-grid-component.component';
-import { DialogHomeComponent  } from './virtualapps/dialog-home/dialog-home.component'
+import { DialogHomeComponent  } from './virtualapps/dialog-home/dialog-home.component';
+import { CalculatorComponent } from './virtualapps/calculator/dialog-calculator.component'
 
 
 
@@ -20,7 +21,8 @@ import { DialogHomeComponent  } from './virtualapps/dialog-home/dialog-home.comp
     DialogContentComponent,
     SearchComponent,
     IconGridComponentComponent,
-    DialogHomeComponent
+    DialogHomeComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

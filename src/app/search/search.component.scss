@@ -4,8 +4,15 @@ input{
   height: 25px;
 
   // background: #84838393;
-  background-color: #7F052D;
-  color: white;
+  // background-color: #7F052D;
+
+  // background-color: #2B88AA;
+  background-color: white;
+color: black;
+
+
+
+  //color: white;
   border: transparent;
 }
 
@@ -28,4 +35,6 @@ input{
   cursor: pointer;
 }
 
-
+.material-icons{
+  color: white;
+}

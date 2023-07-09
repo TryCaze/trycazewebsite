@@ -4,7 +4,7 @@
 
   <div class="icon-grid">
     <button class="icon" *ngFor="let icon of icons" (click)="openDialog(icon)">
-      <img [src]="'assets/images/' + icon + '.svg'" alt="{{ icon }}" />
+      <img class="icons" [src]="'assets/images/' + icon + '.svg'" alt="{{ icon }}" />
     </button>
   </div>
 
@@ -12,6 +12,10 @@
 
   <dialog [id]="'dialog-home'">
     <app-dialog-home (close)="closeDialog(icons[0])"></app-dialog-home>
+  </dialog>
+
+  <dialog [id]="'dialog-account_balance'">
+    <app-calculator (close)="closeDialog(icons[1])"></app-calculator>
   </dialog>
 
   <div *ngFor="let icon of icons">

@@ -1,16 +1,33 @@
 .icon-grid{
   // background-color: #ff8a6698;
-  background-color: #CA293D;
+  // background-color: #CA293D;
+ background-color: #393a39;
 }
+
 
 #dialog-home{
   // background-color: black;
   height: 75%;
   width: 75%;
-  background-color: gray;
+
+
+
+
+  background-color: #2B88AA;
+ // background-color: gray;
 }
 
 
 #dialog-home::backdrop{
   background-color: transparent;
+}
+
+.icons:hover{
+  background-color: #555655;
+  transition: 0.3s;
+}
+
+#dialog-account_balance{
+  width: 25%;
+  height: 75%;
 }
