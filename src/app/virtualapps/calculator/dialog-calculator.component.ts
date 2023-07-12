@@ -15,6 +15,7 @@ export class CalculatorComponent {
 
   input: string = '';
   result: string = '';
+  formula: string = '';
 
 
   pressNum(num: string) {
@@ -24,7 +25,6 @@ export class CalculatorComponent {
       if (this.input != "") {
 
         const lastNum = this.getLastOperand()
-        console.log(lastNum.lastIndexOf("."))
         if (lastNum.lastIndexOf(".") >= 0) return;
       }
     }
@@ -48,12 +48,10 @@ export class CalculatorComponent {
 
   getLastOperand() {
     let pos: number;
-    console.log(this.input)
     pos = this.input.toString().lastIndexOf("+")
     if (this.input.toString().lastIndexOf("-") > pos) pos = this.input.lastIndexOf("-")
     if (this.input.toString().lastIndexOf("*") > pos) pos = this.input.lastIndexOf("*")
     if (this.input.toString().lastIndexOf("/") > pos) pos = this.input.lastIndexOf("/")
-    console.log('Last ' + this.input.substr(pos + 1))
     return this.input.substr(pos + 1)
   }
 
@@ -97,13 +95,12 @@ export class CalculatorComponent {
       formula = formula.substr(0, formula.length - 1);
     }
 
-    console.log("Formula " + formula);
-    this.result = eval(formula);
+    this.formula = eval(formula);
   }
 
   getAnswer() {
     this.calcAnswer();
-    this.input = this.result;
+    this.result = this.formula;
     if (this.input == "0") this.input = "";
   }
 }
